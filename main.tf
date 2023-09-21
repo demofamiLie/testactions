@@ -1,4 +1,6 @@
-provider "aws" {}
+provider "aws" {
+    region = "us-west-1"
+}
 
 #vpc creation
 resource "aws_vpc" "test" {
