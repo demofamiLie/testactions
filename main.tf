@@ -1,9 +1,10 @@
 provider "aws" {}
 
+#vpc creation
 resource "aws_vpc" "test" {
-cidr_block = "10.0.0.0/16"
+  cidr_block = "10.0.0.0/16"
 
-tags = {
-  name = "Actions-test"
-}
+  tags = {
+    name = "Actions-test"
+  }
 }
